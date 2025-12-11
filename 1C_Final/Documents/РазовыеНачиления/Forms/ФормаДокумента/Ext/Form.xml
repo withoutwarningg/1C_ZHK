@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="НачиСленияРаз" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.НачиСленияРаз</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="НачиСленияРазКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="НачиСленияРазКоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="НачиСленияРазРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="НачиСленияРазСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>НачиСленияРаз</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НачиСленияРазСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="НачиСленияРазСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="НачиСленияРазСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>НачиСленияРаз</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="НачиСленияРазСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="НачиСленияРазСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="НачиСленияРазУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>НачиСленияРаз</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="НачиСленияРазУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="НачиСленияРазУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="НачиСленияРазНомерСтроки" id="20">
+					<DataPath>Объект.НачиСленияРаз.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НачиСленияРазНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="НачиСленияРазНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<ColumnGroup name="НачиСленияРазГруппа1" id="44">
+					<ExtendedTooltip name="НачиСленияРазГруппа1РасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="НачиСленияРазЛицевойСчет" id="23">
+							<DataPath>Объект.НачиСленияРаз.ЛицевойСчет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НачиСленияРазЛицевойСчетКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="НачиСленияРазЛицевойСчетРасширеннаяПодсказка" id="25"/>
+						</InputField>
+						<ColumnGroup name="НачиСленияРазГруппа2" id="46">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="НачиСленияРазГруппа2РасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<LabelField name="НачиСленияРазЛицевойСчетДом" id="38">
+									<DataPath>Объект.НачиСленияРаз.ЛицевойСчет.Дом</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НачиСленияРазЛицевойСчетДомКонтекстноеМеню" id="39"/>
+									<ExtendedTooltip name="НачиСленияРазЛицевойСчетДомРасширеннаяПодсказка" id="40"/>
+								</LabelField>
+								<LabelField name="НачиСленияРазЛицевойСчетПомещение" id="41">
+									<DataPath>Объект.НачиСленияРаз.ЛицевойСчет.Помещение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НачиСленияРазЛицевойСчетПомещениеКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="НачиСленияРазЛицевойСчетПомещениеРасширеннаяПодсказка" id="43"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="НачиСленияРазУслуга" id="26">
+					<DataPath>Объект.НачиСленияРаз.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачиСленияРазУслугаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="НачиСленияРазУслугаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="НачиСленияРазТариф" id="29">
+					<DataPath>Объект.НачиСленияРаз.Тариф</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачиСленияРазТарифКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="НачиСленияРазТарифРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="НачиСленияРазКоличество" id="32">
+					<DataPath>Объект.НачиСленияРаз.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачиСленияРазКоличествоКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="НачиСленияРазКоличествоРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="НачиСленияРазСумма" id="35">
+					<DataPath>Объект.НачиСленияРаз.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НачиСленияРазСуммаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="НачиСленияРазСуммаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РазовыеНачиления</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

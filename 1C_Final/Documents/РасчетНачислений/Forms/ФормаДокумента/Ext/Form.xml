@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="РасчетныйПериод" id="7">
+			<DataPath>Объект.РасчетныйПериод</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РасчетныйПериодКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РасчетныйПериодРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Дом" id="10">
+			<DataPath>Объект.Дом</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДомКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Button name="РассчитатьИЗаполнить" id="50">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.РассчитатьИЗаполнить</CommandName>
+			<ExtendedTooltip name="РассчитатьИЗаполнитьРасширеннаяПодсказка" id="51"/>
+		</Button>
+		<Table name="ТабЧасть" id="13">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабЧасть</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабЧастьКонтекстноеМеню" id="14"/>
+			<AutoCommandBar name="ТабЧастьКоманднаяПанель" id="15"/>
+			<ExtendedTooltip name="ТабЧастьРасширеннаяПодсказка" id="16"/>
+			<SearchStringAddition name="ТабЧастьСтрокаПоиска" id="17">
+				<AdditionSource>
+					<Item>ТабЧасть</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабЧастьСтрокаПоискаКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТабЧастьСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабЧастьСостояниеПросмотра" id="20">
+				<AdditionSource>
+					<Item>ТабЧасть</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабЧастьСостояниеПросмотраКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ТабЧастьСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабЧастьУправлениеПоиском" id="23">
+				<AdditionSource>
+					<Item>ТабЧасть</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабЧастьУправлениеПоискомКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ТабЧастьУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ТабЧастьНомерСтроки" id="26">
+					<DataPath>Объект.ТабЧасть.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабЧастьНомерСтрокиКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабЧастьНомерСтрокиРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<ColumnGroup name="ТабЧастьГруппа1" id="58">
+					<ExtendedTooltip name="ТабЧастьГруппа1РасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<InputField name="ТабЧастьЛицевойСчет" id="29">
+							<DataPath>Объект.ТабЧасть.ЛицевойСчет</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТабЧастьЛицевойСчетКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ТабЧастьЛицевойСчетРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<ColumnGroup name="ТабЧастьГруппа2" id="60">
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ТабЧастьГруппа2РасширеннаяПодсказка" id="61"/>
+							<ChildItems>
+								<LabelField name="ТабЧастьЛицевойСчетДом" id="52">
+									<DataPath>Объект.ТабЧасть.ЛицевойСчет.Дом</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабЧастьЛицевойСчетДомКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ТабЧастьЛицевойСчетДомРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+								<LabelField name="ТабЧастьЛицевойСчетПомещение" id="55">
+									<DataPath>Объект.ТабЧасть.ЛицевойСчет.Помещение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТабЧастьЛицевойСчетПомещениеКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ТабЧастьЛицевойСчетПомещениеРасширеннаяПодсказка" id="57"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<InputField name="ТабЧастьДатаПериодаЗадолженности" id="32">
+					<DataPath>Объект.ТабЧасть.ДатаПериодаЗадолженности</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьДатаПериодаЗадолженностиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабЧастьДатаПериодаЗадолженностиРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТабЧастьУслуга" id="35">
+					<DataPath>Объект.ТабЧасть.Услуга</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьУслугаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабЧастьУслугаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТабЧастьТариф" id="38">
+					<DataPath>Объект.ТабЧасть.Тариф</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьТарифКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабЧастьТарифРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ТабЧастьПоставщик" id="41">
+					<DataPath>Объект.ТабЧасть.Поставщик</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьПоставщикКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабЧастьПоставщикРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ТабЧастьКоличествоЕдиниц" id="44">
+					<DataPath>Объект.ТабЧасть.КоличествоЕдиниц</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьКоличествоЕдиницКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабЧастьКоличествоЕдиницРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ТабЧастьКоличествоЕдиницПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТабЧастьСуммаНачислений" id="47">
+					<DataPath>Объект.ТабЧасть.СуммаНачислений</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабЧастьСуммаНачисленийКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТабЧастьСуммаНачисленийРасширеннаяПодсказка" id="49"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.РасчетНачислений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="РассчитатьИЗаполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать и заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рассчитать и заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>РассчитатьИЗаполнить</Action>
+		</Command>
+	</Commands>
+</Form>

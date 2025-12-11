@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="40">
+			<DataPath>Объект.Description</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ФИО</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="42"/>
+		</InputField>
+		<InputField name="Вид" id="43">
+			<DataPath>Объект.ВидВладельца</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="ВидДокумента" id="46">
+			<DataPath>Объект.ВидДокумента</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидДокументаКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="Серия" id="13">
+			<DataPath>Объект.Серия</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СерияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="СерияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Номер" id="16">
+			<DataPath>Объект.Номер</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ДатаВыдачи" id="19">
+			<DataPath>Объект.ДатаВыдачи</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаВыдачиКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДатаВыдачиРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="КемВыдан" id="22">
+			<DataPath>Объект.КемВыдан</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КемВыданКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КемВыданРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="НаименованиеЮридическогоЛица" id="25">
+			<DataPath>Объект.НаименованиеЮридическогоЛица</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеЮридическогоЛицаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="НаименованиеЮридическогоЛицаРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ИНН" id="28">
+			<DataPath>Объект.ИНН</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИННКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="30"/>
+		</InputField>
+		<InputField name="КПП" id="31">
+			<DataPath>Объект.КПП</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КППКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="КППРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="АдресПроживания" id="34">
+			<DataPath>Объект.АдресПроживания</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АдресПроживанияКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="АдресПроживанияРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<InputField name="Телефон" id="37">
+			<DataPath>Объект.Телефон</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТелефонКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="39"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПлательщикиЖКХ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

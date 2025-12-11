@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="d1974af3-8b54-4612-85df-a60b456828b3">
+		<Properties>
+			<Name>НачислениеУслугЖК</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начисление услуг ЖК</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПлательщикиЖКХ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПоставщикиУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоказанияСчетчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СведенияОДомах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетПоОстаткамМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОтчетОПродажах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасчетыСЛицевымиСчетами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЛицевыеСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Услуги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТарифыЖКХ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Квартиры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Материалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПриходМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ПриходМатериала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПриборыУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВызовыСлесарю</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасчетНачислений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОказаниеУслугСлесаря</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РасходМатериалов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПоказанияПриборовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИсторияИзмененийПоказаний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОплатаУслуг</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПоступлениеДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РазовыеНачиления</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыОплаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1161983c-f0d0-42b4-bff4-34ec7d258072</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

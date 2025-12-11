@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Дом" id="7">
+			<DataPath>Объект.Дом</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДомКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДомРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НомерПомещения" id="10">
+			<DataPath>Объект.НомерПомещения</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерПомещенияКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НомерПомещенияРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПлощадьОбщая" id="13">
+			<DataPath>Объект.ПлощадьОбщая</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПлощадьОбщаяКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПлощадьОбщаяРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ПлощадьЖилая" id="16">
+			<DataPath>Объект.ПлощадьЖилая</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПлощадьЖилаяКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ПлощадьЖилаяРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<Table name="ПриборыУчета" id="19">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПриборыУчетаКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ПриборыУчетаКоманднаяПанель" id="21"/>
+			<ExtendedTooltip name="ПриборыУчетаРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ПриборыУчетаСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ПриборыУчетаСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПриборыУчетаСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ПриборыУчетаСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПриборыУчетаУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ПриборыУчета</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПриборыУчетаУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ПриборыУчетаУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПриборыУчетаНомерСтроки" id="32">
+					<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df/-2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПриборыУчетаНомерСтрокиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПриборыУчетаНомерСтрокиРасширеннаяПодсказка" id="34"/>
+				</LabelField>
+				<InputField name="ПриборыУчетаДатаПроизводства" id="35">
+					<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df/0:0f3b331b-fccc-4681-a0eb-8823d7ea503b</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПриборыУчетаДатаПроизводстваКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПриборыУчетаДатаПроизводстваРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ПриборыУчетаДатаУстановки" id="38">
+					<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df/0:04820f0c-e15e-4bb3-a304-2c979ed2322b</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПриборыУчетаДатаУстановкиКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ПриборыУчетаДатаУстановкиРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="ПриборыУчетаМежповерочныйИнтервалГод" id="41">
+					<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df/0:0c582bd6-b228-4732-9602-2ab736de3b11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПриборыУчетаМежповерочныйИнтервалГодКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ПриборыУчетаМежповерочныйИнтервалГодРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ПриборыУчетаДатаПоследнейПоверки" id="44">
+					<DataPath>1/0:a50097d0-7752-4fb1-9c87-3cf608d1e6df/0:ce5dca71-ae44-4c21-a167-b33c58e49fd8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПриборыУчетаДатаПоследнейПоверкиКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ПриборыУчетаДатаПоследнейПоверкиРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Квартиры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
